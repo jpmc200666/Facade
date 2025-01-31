@@ -9,7 +9,7 @@ public class FachadaComputadora {
         this.discoDuro = new DiscoDuro();
     }
     public void iniciar(){
-        System.out.println("Iniciando compiutadora...");
+        System.out.println("Iniciando computadora...");
         cpu.iniciar();
         byte[] bootData = discoDuro.leer(0, 512);
         memoria.cargar(0, bootData);
